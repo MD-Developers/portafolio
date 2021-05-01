@@ -413,9 +413,15 @@ h6 {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .header .titulo {
+        font-size: 55px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .header .titulo {
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .informacion-proyecto {
@@ -473,8 +479,11 @@ h6 {
         padding: 5px;
     }
 
-    .titulo {
-        font-size: 45px;
+    .header .titulo {
+        font-size: 35px;
+    }
+    .header p {
+        font-size: 16px;
     }
 
     .proyectos .modelo {
@@ -499,5 +508,14 @@ h6 {
     .footer .redes-sociales {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header .titulo {
+        font-size: 30px;
+    }
+    .header p {
+        font-size: 14px;
     }
 }
