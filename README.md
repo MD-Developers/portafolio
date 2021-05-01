@@ -1,10 +1,10 @@
 <h1 align="center">
-  <a href="#" aria-hidden="true"><img src="https://raw.githubusercontent.com/MD-Developers/portafolio/main/media/thumbail.png" alt="Write-Your-Card" width="1200" /></a>
+  <a href="https://md-developers.netlify.app/" aria-hidden="true"><img src="https://raw.githubusercontent.com/MD-Developers/portafolio/main/media/thumbail.png" alt="Write-Your-Card" width="1200" /></a>
 </h1>
 
 <div align="center">
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/510685cb-b854-4cbd-9111-1a063abf248f/deploy-status)](https://app.netlify.com/sites/md-developers/deploys)
 
 </div>
 
