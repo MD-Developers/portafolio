@@ -1,0 +1,503 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+    color: #000;
+}
+
+.texto-blanco-normal {
+    color: #fff;
+}
+
+.texto-azul-blanco {
+    color: #CFD8DC;
+}
+
+/* ------------------------- */
+/* Clases de Fullpage.js */
+/* ------------------------- */
+#fp-nav ul li a span {
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: orange;
+}
+
+/* ------------------------- */
+/* Menu de Navegacion */
+/* ------------------------- */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid orange;
+}
+
+.menu li a {
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+    color: orange;
+}
+
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+.header {
+    /* background: url('../media/bg-imagen.jpeg'); */
+    background-position: center;
+}
+
+.header .contenedor-titulo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+
+.header .titulo {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: bajar-subir 1s ease infinite;
+}
+
+.bg-video {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background: #000;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+/* ------------------------- */
+/* Animaciones */
+/* ------------------------- */
+@keyframes bajar-subir {
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+/* ------------------------- */
+/* Proyectos */
+/* ------------------------- */
+.proyectos article {
+    background-position: center;
+    background-size: cover;
+}
+
+.proyectos article:nth-child(1) {
+    /* background-image: url('../media/producto-01.jpg'); */
+    background-color: #000;
+    color: #fff;
+}
+
+.proyectos article:nth-child(2) {
+    /* background-image: url('../media/producto-02.jpg'); */
+    background-color: #303F9F;
+    color: #fff;
+}
+
+.proyectos article:nth-child(3) {
+    /* background-image: url('../media/producto-03.jpg'); */
+    background-color: #000;
+    color: #fff;
+}
+
+.proyectos .informacion-proyecto {
+    margin: 0 30px;
+
+    position: relative;
+    width: 30%;
+}
+
+/* Para los videos */
+.proyectos .fp-tableCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos video {
+    /* flex: 1; */
+    width: 60%;
+    height: auto;
+    margin-right: 50px;
+    border: 1px solid #CFD8DC;
+}
+
+.proyectos video.cakes {
+    border: none;
+    max-height: 460px;
+}
+
+/* ************ */
+
+.proyectos .informacion-proyecto::before {
+    content: "";
+    height: 50px;
+    width: 2px;
+    display: inline-block;
+    background: orange;
+    position: absolute;
+    top: 50%;
+    margin: -10px;
+}
+
+.proyectos .modelo {
+    font-size: 45px;
+}
+
+.proyectos .descripcion {
+    font-size: 22px;
+}
+
+/* .proyectos .precio::before {
+    content: "$";
+    display: inline-block;
+} */
+
+/* ------------------------- */
+/* Clases de fullpage.js - Flechas de Slide */
+/* ------------------------- */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #CFD8DC transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #CFD8DC;
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+.footer .texto-naranja {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.footer h2 {
+    opacity: 0;
+    font-family: 'Oswald', sans-serif;
+    transition: 1s ease all;
+}
+
+.footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.footer .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #30313A;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+
+    margin: 0 50px;
+}
+
+.footer .facebook i {
+    color: #3b5998;
+}
+
+.footer .twitter i {
+    color: #1da1f2;
+}
+
+.footer .instagram i {
+    color: #c13584;
+}
+
+.footer .facebook:hover {
+    background: #3b5998;
+}
+
+.footer .twitter:hover {
+    background: #1da1f2;
+}
+
+.footer .instagram:hover {
+    background: #c13584;
+}
+
+.footer .facebook:hover i {
+    color: #fff;
+}
+
+.footer .twitter:hover i {
+    color: #fff;
+}
+
+.footer .instagram:hover i {
+    color: #fff;
+}
+
+.proyectos .enlace {
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------------------------- */
+/* Tooltips */
+/* ------------------------- */
+.tooltip {
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: visible;
+    width: 180px;
+    font-size: medium;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+
+    position: absolute;
+    top: 110%;
+    left: -40%;
+    z-index: 1;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+  }
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 768px) {
+    .tooltip .tooltiptext {
+        width: 130px;
+        font-size: small;
+        top: 110%;
+        left: -40%;
+    }
+    .tooltip .tooltiptext::after {
+        margin-left: -8px;
+        border-width: 8px;
+    }
+
+    .menu li a,
+    .menu li.active a {
+        font-size: 18px;
+    }
+
+    .modelo {
+        font-size: 40px;
+    }
+
+    .precio {
+        font-size: 23px;
+    }
+
+    .footer h2 {
+        font-size: 15px;
+    }
+
+    .footer .redes-sociales {
+        font-size: 30px;
+    }
+
+    .footer .redes-sociales a {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .texto-naranja {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header .titulo {
+        font-size: 60px;
+    }
+
+    .informacion-proyecto {
+
+        width: 60% !important;
+    }
+
+    .fp-controlArrow.fp-next {
+        left: 100px;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+    }
+
+    /* Para los videos */
+    .proyectos .fp-tableCell {
+        flex-direction: column;
+    }
+
+    .proyectos video {
+        margin-right: 0;
+        margin-top: 20px;
+        width: 70%;
+        flex: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tooltip .tooltiptext {
+        width: 100px;
+        font-size: x-small;
+        top: 115%;
+        left: -50%;
+    }
+
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu li a,
+    .menu li.active a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+
+    .proyectos .modelo {
+        font-size: 30px;
+    }
+
+    .footer .texto-naranja {
+        font-size: 18px;
+    }
+
+    .footer .redes-sociales a {
+        width: 50px;
+        height: 50px;
+
+        margin: 25px 0;
+    }
+
+    .footer .redes-sociales a i {
+        font-size: 24px;
+    }
+
+    .footer .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+    }
+}

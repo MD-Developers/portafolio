@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MD Devs</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<nav class="nav">
+		<a href="#inicio" class="marca"></a>
+		<ul id="menu" class="menu">
+			<li data-menuanchor="inicio" class="active">
+				<a href="#inicio">Inicio</a>
+			</li>
+			<li data-menuanchor="proyectos">
+				<a href="#proyectos">Proyectos</a>
+			</li>
+			<li data-menuanchor="contacto">
+				<a href="#contacto">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+
+	<main id="fullpage">
+		<header class="section header">
+			<div class="contenedor-titulo">
+				<h1 class="titulo">
+					<span class="texto-naranja">MD</span> 
+					<span class="texto-blanco">Developers</span>
+				</h1>
+				<p class="texto-blanco">
+					Convertimos tus Ideas en <span class="typed texto-naranja"></span>
+				</p>
+			</div>
+			<div class="contenedor-icono">
+				<p><a href="#proyectos" class="texto-blanco"><i class="fa fa-chevron-down"></i></a></p>
+			</div>
+		</header>
+
+		<section class="section proyectos">
+
+			<article class="slide">
+				<div class="informacion-proyecto">
+					<p class="modelo">
+						<span class="texto-naranja">Tele </span> 
+						<span class="texto-blanco-normal">Book</span>
+					</p>
+					<p class="descripcion texto-blanco-normal">Una agenda para guardar tus contactos.</p>
+					<a href="https://telebook.netlify.app/" target="_blank" class="enlace">
+						Ir a la Aplicacion <i class="fa fa-external-link"></i>
+					</a>
+				</div>
+				<video autoplay="autoplay" muted loop="true" controls>
+					<source src="media/Tele-Book.mp4" type="video/mp4">
+					Tu navegador no soporta el video.
+				</video>
+			</article>
+
+			<article class="slide">
+				<div class="informacion-proyecto">
+					<p class="modelo">
+						<span class="texto-naranja">Carrousel </span> 
+						<span class="texto-azul-blanco">Cakes</span>
+					</p>
+					<p class="descripcion texto-azul-blanco">Recetario de postres.</p>
+					<a href="https://cravings.netlify.app/" target="_blank" class="enlace">
+						Ir a la Aplicacion <i class="fa fa-external-link"></i>
+					</a>
+				</div>
+				<video class="cakes" autoplay="autoplay" muted loop="true" controls>
+					<source src="media/Recetas.mp4" type="video/mp4">
+					Tu navegador no soporta el video.
+				</video> 
+			</article>
+
+			<article class="slide">
+				<div class="informacion-proyecto">
+					<p class="modelo">
+						<span class="texto-naranja">Write </span> 
+						<span class="texto-blanco-normal">Card</span>
+					</p>
+					<p class="descripcion texto-blanco-normal">Genera imagenes con texto personalizado.</p>
+					<a href="https://write-your-card.netlify.app/" target="_blank" class="enlace">
+						Ir a la Aplicacion <i class="fa fa-external-link"></i>
+					</a>
+				</div>
+				<video autoplay="autoplay" muted loop="true" controls>
+					<source src="media/WriteCard.mp4" type="video/mp4">
+					Tu navegador no soporta el video.
+				</video>
+			</article>
+		</section>
+
+		<footer class="section footer">
+			<h2 class="texto-naranja">Siguenos en Github</h2>
+			<p class="redes-sociales">
+				<a href="https://github.com/MilagrosPirona" class="facebook tooltip">
+					<i class="fa fa-github"></i>
+					<span class="tooltiptext">@MilagrosPirona</span>
+				</a>
+				<a href="https://github.com/MD-Developers" class="twitter tooltip">
+					<i class="fa fa-github"></i>
+					<span class="tooltiptext">@MD-Developers</span>
+				</a>
+				<a href="https://github.com/DiegoPerozo" class="instagram tooltip">
+					<i class="fa fa-github"></i>
+					<span class="tooltiptext">@DiegoPerozo</span>
+				</a>
+			</p>
+		</footer>
+	</main>
+
+	<script src="js/fullpage.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
