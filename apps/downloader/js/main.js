@@ -4,7 +4,6 @@ let select = document.querySelector('.custom-select');
 let serverURL = 'https://milaadownloader.kuroki.repl.co';
 
 Btn.addEventListener('click', () => {
-  console.log("Entro");
 	if (!URLinput.value) {
 		alert('Ingresa una URL de Youtube');
 	} else {
