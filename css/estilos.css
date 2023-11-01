@@ -102,8 +102,24 @@ h6 {
 /* Header */
 /* ------------------------- */
 .header {
-    /* background: url('../media/bg-imagen.jpeg'); */
+    /* background: url('../media/stock3.jpg'); */
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.transparencia {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+.quote {
+    margin-top: 125px;
+    border-radius: 15px;
+    width: 50%;
 }
 
 .header .contenedor-titulo {
@@ -160,30 +176,27 @@ h6 {
 /* ------------------------- */
 /* Proyectos */
 /* ------------------------- */
-.proyectos article {
+.proyecto article {
     background-position: center;
     background-size: cover;
 }
 
-.proyectos article:nth-child(1) {
-    /* background-image: url('../media/producto-01.jpg'); */
+/* .telebook article:nth-child(1) {
     background-color: #000;
     color: #fff;
 }
 
-.proyectos article:nth-child(2) {
-    /* background-image: url('../media/producto-02.jpg'); */
+.telebook article:nth-child(2) {
     background-color: #303F9F;
     color: #fff;
 }
 
-.proyectos article:nth-child(3) {
-    /* background-image: url('../media/producto-03.jpg'); */
+.telebook article:nth-child(3) {
     background-color: #000;
     color: #fff;
-}
+} */
 
-.proyectos .informacion-proyecto {
+.proyecto .informacion-proyecto {
     margin: 0 30px;
 
     position: relative;
@@ -191,13 +204,13 @@ h6 {
 }
 
 /* Para los videos */
-.proyectos .fp-tableCell {
+.proyecto .fp-tableCell {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.proyectos video {
+.proyecto video {
     /* flex: 1; */
     width: 60%;
     height: auto;
@@ -205,14 +218,14 @@ h6 {
     border: 1px solid #CFD8DC;
 }
 
-.proyectos video.cakes {
+.proyecto video.cakes {
     border: none;
     max-height: 460px;
 }
 
 /* ************ */
 
-.proyectos .informacion-proyecto::before {
+.proyecto .informacion-proyecto::before {
     content: "";
     height: 50px;
     width: 2px;
@@ -223,11 +236,11 @@ h6 {
     margin: -10px;
 }
 
-.proyectos .modelo {
+.proyecto .modelo {
     font-size: 45px;
 }
 
-.proyectos .descripcion {
+.proyecto .descripcion {
     font-size: 22px;
 }
 
