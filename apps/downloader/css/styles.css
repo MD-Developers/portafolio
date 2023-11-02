@@ -138,6 +138,8 @@ select::-ms-expand {
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
+
+  margin-top: 20px;
 }
 
 .download-button:active,
